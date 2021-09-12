@@ -12,7 +12,19 @@ body {
     padding: 0;
     margin: 0;
 }
-
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+}
 
 .footer {
     background-color: rgba(186,7,7,1);
@@ -30,6 +42,31 @@ body {
     color: #080101;
 }
 
+
+@media (min-width:700px) {
+    #cont-title h1 {
+        font-size: 50px;
+    }
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.title {
+    margin-top: 3%;
+}
+
+.title h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.btn {
+    width: 200px;
+    margin-bottom: 20px;
+}
 
 @media (min-width:700px) {
     #cont-title h1 {
